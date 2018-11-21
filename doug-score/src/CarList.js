@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import config from './config';
+import load from './helpers/spreadsheet';
 
 class CarList extends Component {
 // Set default state
@@ -13,6 +14,15 @@ componentDidMount() {
     window.gapi.load('client', this.initClient);
 }
 
+ onLoad = (data, error) => {
+        if (data) {
+          const cars = data.cars;
+          this.setState({ cars });
+        } else {
+          this.setState({ error });
+        }
+      };
+      
 initClient = () => {
     // Step 2. Initialize JavaScript client library
     window.gapi.client
@@ -25,14 +35,7 @@ initClient = () => {
       // Step 3. Initialize/make the API request
       load(this.onLoad);
       // If load function returns data from spreadsheet.js, cars state is set to that data. Otherwise an error will show.
-      onLoad = (data, error) => {
-        if (data) {
-          const cars = data.cars;
-          this.setState({ cars });
-        } else {
-          this.setState({ error });
-        }
-      };
+     
     });
   };
 
@@ -52,3 +55,5 @@ initClient = () => {
         );
     }
 }
+
+export default CarList;
