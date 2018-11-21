@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import config from '../config';
+import config from './config';
 
-class ListOfCars extends Component {
+class CarList extends Component {
+// Set default state
+  state = {
+    cars: [],
+    error: null
+  };
 
 componentDidMount() {
     // Step 1. Load JavaScript client library
-    window.gapi.load("client", this.initClient);
+    window.gapi.load('client', this.initClient);
 }
 
 initClient = () => {
@@ -31,17 +36,19 @@ initClient = () => {
     });
   };
 
-  // Set default state
-  state = {
-    cars: [],
-    error: null
-  }
-
     render() {
+        const { cars, error } = this.state;
+        if (error) {
+            return <div>{this.state.error}</div>;
+        }
         return (
-            <div>
-                Car List Will Go Here
-            </div>
+            <ul>
+                {cars.map((car, i) => (
+                    <li key={i}>
+                        {car.year} {car.make} {car.model}
+                    </li>
+                ))}
+            </ul>
         );
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ListOfCars from './components/ListOfCars'; //importing in new component which will have our Cars List
+import CarList from './CarList'; //importing in new component which will have our Cars List
 
 class App extends Component {
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <ListOfCars />
+        <CarList />
       </div>
     );
   }
