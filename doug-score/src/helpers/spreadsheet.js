@@ -6,7 +6,7 @@ import config from "../config";
  * Load the cars from the spreadsheet
  * Get the right values from it and assign.
  */
-export function load(callback) {
+export default function load(callback) {
   window.gapi.client.load("sheets", "v4", () => {
     window.gapi.client.sheets.spreadsheets.values
       .get({
