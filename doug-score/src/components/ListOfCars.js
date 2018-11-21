@@ -31,6 +31,11 @@ initClient = () => {
     });
   };
 
+  state = {
+    cars: [],
+    error: null
+  }
+
     render() {
         return (
             <div>
