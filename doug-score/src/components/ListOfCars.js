@@ -31,6 +31,7 @@ initClient = () => {
     });
   };
 
+  // Set default state
   state = {
     cars: [],
     error: null
