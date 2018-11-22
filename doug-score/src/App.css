@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/05/16/65/2559b53dd8f2f5b.jpg");
+  background-size: contain;
+  color: white; 
 }
 
 .App-header {
