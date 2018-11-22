@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import config from './config';
-import load from './helpers/spreadsheet';
+import config from '../config';
+import load from '../helpers/spreadsheet';
 
 class CarList extends Component {
 // Set default state
