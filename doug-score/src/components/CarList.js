@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import config from '../config';
 import load from '../helpers/spreadsheet';
+// import './CarList.css';
 
 class CarList extends Component {
 // Set default state
