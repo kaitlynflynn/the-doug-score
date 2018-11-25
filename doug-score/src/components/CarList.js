@@ -46,13 +46,13 @@ initClient = () => {
             return <div>{this.state.error}</div>;
         }
         return (
-            <ul>
+            <card className="list">
                 {cars.map((car, i) => (
                     <li key={i}>
                         {car.year} {car.make} {car.model}
                     </li>
                 ))}
-            </ul>
+            </card>
         );
     }
 }
