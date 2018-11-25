@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/05/16/65/2559b53dd8f2f5b.jpg");
+  background-image: url("https://www.magoli.gr/wp-content/uploads/2018/02/bg.jpg");
   background-size: contain;
-  color: white; 
+  color: black; 
+  padding: 10px;
 }
 
 .App-header {
@@ -14,4 +15,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.list {
+  padding: 10px;
 }
