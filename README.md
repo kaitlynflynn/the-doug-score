@@ -1,5 +1,7 @@
 # the-doug-score
-Playing around with taking data populated within a Google Sheets spreadsheet and seeing if I can implement some other functionality with this data along with utilizing React.
+Playing around with taking data populated within a Google Sheets spreadsheet and seeing if I can implement some other functionality with this data along with utilizing React. 
+
+For those unfamiliar with Doug DeMuro, he is a fairly well known writer in the automotive industry/car enthusiast scene. He created and maintains the spreadsheet used here to review various types of cars on his "Doug Score" template he created himself. If you are into cars at all, check out his YouTube channel [here.](https://www.youtube.com/channel/UCsqjHFMB_JYTaEnf_vmTNqg) 
 
 ## Deployment
 Coming soon!
